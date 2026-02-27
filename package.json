@@ -1,0 +1,31 @@
+{
+  "name": "typescript-playwright-bdd",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "browsers": "npx playwright install --with-deps",
+    "bdd": "tsx ./node_modules/@cucumber/cucumber/bin/cucumber-js --config bdd/cucumber.cjs --tags",
+    "test": "npx playwright test",
+    "report": "npx playwright show-report test-reports",
+    "codegen": "npx playwright codegen"
+  },
+"dependencies": {
+    "typescript": "^5.9.3",
+    "tsx": "^4.20.6",
+    "@cucumber/cucumber": "^12.2.0",
+    "playwright": "^1.56.1",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.1",
+    "cucumber-html-reporter": "^7.2.0",
+    "dotenv": "^17.2.3",
+    "axios": "^1.12.2",
+    "jquery": "3.7.1"
+  },
+  "overrides": {
+    "glob": "^11.0.3",
+    "uuid": "^13.0.0",
+    "reflect-metadata": "^0.2.2",
+    "semver": "^7.7.3"
+  }
+}
