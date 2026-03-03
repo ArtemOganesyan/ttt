@@ -44,3 +44,6 @@ Thumbs.db
 # Misc
 *.tmp
 .cache/
+
+# Test Reports
+test-reports/
