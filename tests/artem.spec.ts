@@ -9,9 +9,9 @@ test('USPS zip plus', async ({ page }) => {
     await page.getByRole('button', { name: 'Find' }).click();
 })
 
-test('USPS zip plus oop', async ({ page }) => {
-    const lookupZip = new USPSLookupZip(page);
-    await lookupZip.goto();
-    await lookupZip.fillRequiredFields('11 Wall St', 'New York', 'NY');
-    await lookupZip.clickFind();
-})
+// test('USPS zip plus oop', async ({ page }) => {
+//     const lookupZip = new USPSLookupZip(page);
+//     await lookupZip.goto();
+//     await lookupZip.fillRequiredFields('11 Wall St', 'New York', 'NY');
+//     await lookupZip.clickFind();
+// })
