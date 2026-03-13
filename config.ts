@@ -31,10 +31,17 @@ export const config = {
     firstName: process.env.TEST_FIRST_NAME!,
     lastName: process.env.TEST_LAST_NAME!,
   },
+  database: {
+    host: process.env.DB_HOST || '18.119.107.168',
+    port: parseInt(process.env.DB_PORT || '3306'),
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || '',
+    name: process.env.DB_NAME || 'test_data',
+  },
   other: {
     debug: process.env.DEBUG === 'true',
     ci: process.env.CI,
   },
 };
 
-export const { timeouts, browser, testData } = config;
+export const { timeouts, browser, testData, database } = config;
